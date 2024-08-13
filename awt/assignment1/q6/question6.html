@@ -1,0 +1,91 @@
+ <!-- 6. Display your class timetable. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Timetable</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .lunch-break {
+            writing-mode: vertical-lr;
+            text-orientation: mixed;
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Class Timetable</h2>
+
+    <table>
+        <tr>
+            <th rowspan="2">Day</th>
+            <th colspan="4">Time</th>
+            <th rowspan="2" class="lunch-break">Lunch Break</th>
+            <th colspan="3">Time</th>
+        </tr>
+        <tr>
+            <th>9.00 - 9.55</th>
+            <th>9.55 - 10.50</th>
+            <th>11.10 - 12.05</th>
+            <th>12.05 - 1.00</th>
+            <th>1.55 - 2.50</th>
+            <th>2.50 - 3.40</th>
+            <th>3.40 - 4.30</th>
+        </tr>
+        <tr>
+            <th>MON</th>
+            <td colspan="3">&larr; LAB &rarr;</td>
+            <td >MC&AD</td>
+            <td rowspan="5"></td>
+            <td >NLP/CC&BD A</td>
+            <td>AWT</td>
+        </tr>
+        <tr>
+            <th>TUE</th>
+            <td>AIML</td>
+            <td>AWT</td>
+            <td>Placement Training</td>
+            <td>NLP/CC&BD A</td>
+            <td colspan="2">Placement Training &rarr;</td>
+        </tr>
+        <tr>
+            <th>WED</th>
+            <td>AIML</td>
+            <td>AWT</td>
+            <td>MC&AD</td>
+            <td>NW & CS/BCT</td>
+            <td colspan="3">&larr; LAB &rarr;</td>
+        </tr>
+        <tr>
+            <th>THU</th>
+            <td>NLP/CC&BD A</td>
+            <td>AIML</td>
+            <td>NW & CS/BCT</td>
+            <td>MC&AD</td>
+            <td colspan="2">Placement Training &rarr;</td>
+        </tr>
+        <tr>
+            <th>FRI</th>
+            <td>NW & CS/BCT</td>
+            <td>AIML</td>
+            <td>AWT</td>
+            <td>---</td>
+            <td colspan="2">Placement Training &rarr;</td>
+        </tr>
+    </table>
+
+</body>
+</html>
